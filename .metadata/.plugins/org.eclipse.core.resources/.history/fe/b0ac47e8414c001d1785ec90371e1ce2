@@ -1,0 +1,27 @@
+package com.experion.basicprogramming;
+
+import java.util.Scanner;
+
+public class VowelValidation {
+
+	public static void main(String[] args) {
+		
+		
+		int a;
+		
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter a letter");
+		a=scanner.nextLine();
+		
+		
+		switch(a)
+		{
+		case 'a':system.out.println("hello a");
+				break;
+		default:System.out.println("number is not vowel");
+				break;
+			
+	}
+
+}

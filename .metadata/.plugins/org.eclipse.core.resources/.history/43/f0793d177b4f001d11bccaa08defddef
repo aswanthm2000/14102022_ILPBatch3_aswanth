@@ -1,0 +1,52 @@
+package com.experion.service;
+
+import java.util.ArrayList;
+
+import com.experion.entity.Account;
+import com.experion.entity.BankServices;
+import com.experion.entity.Card;
+import com.experion.entity.Product;
+
+public class Service {
+	
+	
+	
+	public static Product createProduct(String productType) 
+	{
+		ArrayList<BankServices>bankServices=new ArrayList<BankServices>();
+		bankServices.add(new BankServices("SOB100","online banking"));
+		bankServices.add(new BankServices("SOB101","mobile Banking"));
+		bankServices.add(new BankServices("SOB102","cash deposit"));
+		Product product=null;
+		
+		if(productType.compareTo("cards")==0){
+		    product=new Card("PRDMC100","matser card","cards","master");}
+		else if(productType.compareTo("accounts")==0) {
+			product=new Account("PRDMC100","women saving account","accounts","farmer saving account",bankServices);
+		}
+			return product;
+	}
+
+	
+
+	public static void displayProductDeatils(ArrayList<Product> productList) {
+		Card card=null;
+		Account account=null;
+		System.out.println("product code"+"   "+"product name"+"   "+"product type"+"  "+"card/account");
+		for(Product product:productList) {
+			if(product instanceof Card)
+			{
+				card=(Card)product;
+				System.out.println(card.getProductCode()+"  "+card.getProductName()+"  "+card.getProductType()+"   "+card.getCardType());
+			}
+			else if(product instanceof Account)
+			{
+				account=(Account)product;
+				System.out.println(account.getProductCode()+"  "+account.getProductName()+"  "+account.getProductType()+"   "+account.getAccountType()+"  "+account.getBankservices().getServiceName());
+				for(BankServices bankServices:account.getBankservices()) {
+					System.out.println(bankServices.getServiceName());
+				}
+			}
+		}	
+	}
+}

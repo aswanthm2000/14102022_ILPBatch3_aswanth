@@ -1,0 +1,27 @@
+package com.ilp.basicprogrammingassignment;
+
+import java.util.Scanner;
+
+public class BasicAssignment5 {
+
+	public static void main(String[] args) {
+		System.out.println("***** Program to calculate sum of series  1^1-3^2+5^3-7^4+....n^n *******");
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the range of series");
+		int rangeOfSeries= scanner.nextInt();
+		int baseValue = 1;
+		int powerValue = 1;
+		double seriesSum = 0;
+		for (int count = 1; count <= rangeOfSeries; count++) {
+			if (powerValue % 2 == 0)
+				seriesSum = seriesSum - Math.pow(baseValue, count);
+			else
+				seriesSum = seriesSum + Math.pow(baseValue, count);
+			baseValue += 2;
+			powerValue += 1;
+
+		}
+		System.out.println("The Sum of series is:" + seriesSum);
+	}
+}

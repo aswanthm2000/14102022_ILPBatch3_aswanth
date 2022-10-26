@@ -1,0 +1,21 @@
+package com.ilpexperion.basicprogramming;
+
+import java.util.Scanner;
+
+public class SwappingNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	Scanner scanner=new Scanner(system.in);
+	int firstNumber;
+	int secondNumber;
+	
+	System.out.println("enter first number");
+	firstNumber=scanner.nextInt();
+	System.out.println("enter second number");
+	secondNumber=scanner.nextInt();
+	
+	}
+
+}

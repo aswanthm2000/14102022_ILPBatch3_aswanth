@@ -1,0 +1,61 @@
+package com.ilp.basicprogrammingassignment;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BasicAssignment2 {
+
+	public static void main(String[] args) {
+		System.out.println("Arrange numbers in both ascending and descending order");
+
+		Scanner scanner = new Scanner(System.in);
+		int numberOne;
+		int numberTwo;
+		int numberThree;
+		int numberFour;
+		int greatOne = 0;
+		int greatTwo = 0;
+		int greatThree = 0;
+		int greatFour=0;
+
+		System.out.println("Enter the 4 numbers");
+		numberOne = scanner.nextInt();
+		numberTwo = scanner.nextInt();
+		numberThree = scanner.nextInt();
+		numberFour = scanner.nextInt();
+
+		int temp;
+		if (numberOne > numberTwo) {
+			temp = numberOne;
+			numberOne = numberTwo;
+			numberTwo = temp;
+		}
+		if (numberThree > numberFour) {
+			temp = numberThree;
+			numberThree = numberFour;
+			numberFour = temp;
+		}
+		if (numberOne > numberThree) {
+			temp = numberOne;
+			numberOne = numberThree;
+			numberThree = temp;
+		}
+		if (numberTwo > numberFour) {
+			temp = numberTwo;
+			numberTwo = numberFour;
+			numberFour = temp;
+		}
+		if (numberTwo > numberThree) {
+			temp = numberTwo;
+			numberTwo = numberThree;
+			numberThree = temp;
+		}
+
+		System.out.println("\nThe numbers after sorting in ascending order\n" + numberOne + "\t" + numberTwo + "\t"
+				+ numberThree + "\t" + numberFour);
+		System.out.println("\nThe numbers after sorting in descending order\n" + numberFour + "\t" + numberThree + "\t"
+				+ numberTwo + "\t" + numberOne);
+
+	}
+
+}

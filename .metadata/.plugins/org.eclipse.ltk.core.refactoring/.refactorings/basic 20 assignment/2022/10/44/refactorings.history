@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.experion.assignment17&apos; to &apos;com.ilp.basicprogrammingassignment&apos;&#x0D;&#x0A;- Original project: &apos;basic 20 assignment&apos;&#x0D;&#x0A;- Original element: &apos;basic 20 assignment/src/com.experion.assignment17&apos;&#x0D;&#x0A;- Renamed element: &apos;basic 20 assignment/src/com.ilp.basicprogrammingassignment&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.experion.assignment17&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.experion.assignment17" name="com.ilp.basicprogrammingassignment" qualified="false" references="true" stamp="1666627322331" textual="false" version="1.0"/>
+</session>

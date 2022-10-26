@@ -1,0 +1,60 @@
+package com.ilp.basicprogrammingassignment;
+
+import java.util.Scanner;
+
+public class BasicAssignment1 {
+
+	public static void main(String[] args) {
+		System.out.println("\n***** PROGRAM TO ARRANGE THREE NUMBERS IN DESCENDING ORDER *******\n\n");
+		int firstNumber;
+		int secondNumber;
+		int thirdNumber;
+		int greatOne ;
+		int greatTwo ;
+		int greatThree;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter the 3 numbers");
+
+		firstNumber = scanner.nextInt();
+		secondNumber = scanner.nextInt();
+		thirdNumber = scanner.nextInt();
+
+		if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+			if (secondNumber > thirdNumber) {
+				greatOne = firstNumber;
+				greatTwo = secondNumber;
+				greatThree = thirdNumber;
+			} else if (thirdNumber > secondNumber) {
+				greatOne = firstNumber;
+				greatTwo = thirdNumber;
+				greatThree = secondNumber;
+			}
+		} else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+			if (firstNumber > thirdNumber) {
+				greatOne = secondNumber;
+				greatTwo = firstNumber;
+				greatThree = thirdNumber;
+			} else if (thirdNumber > firstNumber) {
+				greatOne = secondNumber;
+				greatTwo = thirdNumber;
+				greatThree = firstNumber;
+			}
+		} else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
+			if (firstNumber > secondNumber) {
+				greatOne = thirdNumber;
+				greatTwo = firstNumber;
+				greatThree = secondNumber;
+			} else if (secondNumber > firstNumber) {
+				greatOne = thirdNumber;
+				greatTwo = secondNumber;
+				greatThree = firstNumber;
+			}
+		}
+
+		System.out.println("The numbers in descending order" + greatOne + "   " + greatTwo + "    " + greatThree);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.experion.service;
+
+import java.util.ArrayList;
+
+import com.experion.entity.Product;
+import com.experion.entity.Service;
+
+public class BankServices {
+public static ArrayList<Service>createService(){
+	
+	ArrayList<Service>allServiceList=new ArrayList<Service>();
+	allServiceList.add(new Service("deposit cash"));
+	allServiceList.add(new Service("withdraw cash"));
+	return allServiceList;
+}
+public static ArrayList<Product>createProducts(ArrayList<Service>allServiceList){
+	ArrayList<Product>productList=new ArrayList<Product>();
+	
+	return productList;
+}
+}

@@ -1,0 +1,23 @@
+package com.ilpexperion.basicprogramming;
+
+import java.util.Scanner;
+public class SecondLargeNumber {
+
+	public static void main(String[] args) {
+		
+		int firstNumber;	
+		int secondNumber;
+		int thirdNumber;
+		
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter first number");
+		firstNumber=scanner.nextInt();
+		System.out.println("enter second number");
+		secondNumber=scanner.nextInt();
+		System.out.println("enter third number");
+		thirdNumber=scanner.nextInt();
+		if((firstNumber>secondNumber)&&(firstNumber))
+		
+	}
+
+}
